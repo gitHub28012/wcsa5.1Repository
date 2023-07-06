@@ -19,13 +19,11 @@ public class validLoginTestCase {
 		driver.get("http://laptop-knl22f4g/login.do");
 
 		// read the data from excel file and test the login page
+		
 		Flib flib = new Flib();  
-		String validUsername = flib.readExcelData("./data/ActiTimeTestData.xlsx","validcreds",1,0);
-		String validPassword = flib.readExcelData("./data/ActiTimeTestData.xlsx","validcreds",1,1);
-
-
-		driver.findElement(By.name("username")).sendKeys(validUsername);
-		driver.findElement(By.name("pwd")).sendKeys(validPassword);
+		
+		driver.findElement(By.name("username")).sendKeys(flib.readExcelData("./data/ActiTimeTestData.xlsx","validcreds",1,0));
+		driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData("./data/ActiTimeTestData.xlsx","validcreds",1,1));
 		driver.findElement(By.id("loginButton")).click();
 
 	}

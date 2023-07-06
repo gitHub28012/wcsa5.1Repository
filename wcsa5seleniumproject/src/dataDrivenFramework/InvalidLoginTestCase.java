@@ -23,15 +23,11 @@ public class InvalidLoginTestCase {
 		// read the data from excel file and test the login page
 		Flib flib = new Flib();  
 		// to read multiple data use for loop
-		for(int i=1;i<=8;i++)
+		int rc = flib.getLastRowCount("./data/ActiTimeTestData.xlsx","invalidcreds");
+		for(int i=1;i<=rc;i++)
 		{
-			String invalidUsername = flib.readExcelData("./data/ActiTimeTestData.xlsx","invalidcreds",i,0);
-			String invalidPassword = flib.readExcelData("./data/ActiTimeTestData.xlsx","invalidcreds",i,1);
-
-
-			driver.findElement(By.name("username")).sendKeys(invalidUsername);
-		
-			driver.findElement(By.name("pwd")).sendKeys(invalidPassword);
+			driver.findElement(By.name("username")).sendKeys(flib.readExcelData("./data/ActiTimeTestData.xlsx","invalidcreds", i, 0));
+			driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData("./data/ActiTimeTestData.xlsx","invalidcreds",i,1));
 			driver.findElement(By.id("loginButton")).click();
 			Thread.sleep(2000);
 			driver.findElement(By.name("username")).clear();
