@@ -13,6 +13,10 @@ public class ValidLoginTestCase extends BaseTest {
 		// to call the webelements of login page create the obj of loginpage class
 		LoginPage lp = new LoginPage(driver);
 	    lp.validLoginMethod(flib.readPropertyData(PROP_PATH,"Username"),flib.readPropertyData(PROP_PATH, "Password"));
+	     // use homepage Elements create obj of HomePage POM
+	       HomePage hp = new HomePage(driver);
+	       hp.clickOnLogoutLink();
+	
 	}
 
 }
