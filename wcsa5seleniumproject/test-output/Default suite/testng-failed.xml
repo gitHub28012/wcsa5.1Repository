@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGExecution.SelectBrowser">
+      <class name="testNGPackage.AsserstionInTestNG">
         <methods>
-          <include name="chromeMethod"/>
+          <include name="verificationMethod"/>
         </methods>
-      </class> <!-- testNGExecution.SelectBrowser -->
+      </class> <!-- testNGPackage.AsserstionInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
