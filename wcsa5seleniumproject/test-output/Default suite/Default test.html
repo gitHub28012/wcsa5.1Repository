@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 24 14:48:29 IST 2023</td>
+<td>Started on:</td><td>Mon Jul 24 15:59:12 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2667 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3291 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNGPackage.AsserstionInTestNG.verificationMethod()'><b>verificationMethod</b><br>Test class: testNGPackage.AsserstionInTestNG</td>
+<td title='testNGPackage.TestCase.loginMethod()'><b>loginMethod</b><br>Test class: testNGPackage.TestCase<br/>
+<a href="#Output-876881599" onClick='toggleBox("Output-876881599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-876881599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-876881599">
+Test Started<br/>
+This method is failed taken the screenshot :loginMethod<br/>
+</div>
+</td>
 <td><div><pre>java.lang.AssertionError: expected [Tanmay] but found [actiTIME - Enter Time-Track]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -84,7 +92,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at testNGPackage.AsserstionInTestNG.verificationMethod(AsserstionInTestNG.java:61)
+	at testNGPackage.TestCase.loginMethod(TestCase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,15 +121,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace455726379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace455726379'><pre>java.lang.AssertionError: expected [Tanmay] but found [actiTIME - Enter Time-Track]
+</pre></div><a href='#' onClick='toggleBox("stack-trace876881599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876881599'><pre>java.lang.AssertionError: expected [Tanmay] but found [actiTIME - Enter Time-Track]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at testNGPackage.AsserstionInTestNG.verificationMethod(AsserstionInTestNG.java:61)
+	at testNGPackage.TestCase.loginMethod(TestCase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,8 +159,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>testNGPackage.AsserstionInTestNG@5149d738</td></tr>
+<td>0</td>
+<td>testNGPackage.TestCase@7f485fda</td></tr>
 </table><p>
 </body>
 </html>

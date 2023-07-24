@@ -9,14 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">108</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,291</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNGAnnotation_Flags.Flag7</td><td><a href="#m0">createUserMethod</a></td><td rowspan="1">1690021133713</td><td rowspan="1">4</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testNGAnnotation_Flags.Flag7</td><td><a href="#m1">loginMethod</a></td><td rowspan="1">1690021133690</td><td rowspan="1">12</td></tr><tr class="passedeven"><td><a href="#m2">logoutMethod</a></td><td rowspan="1">1690021133725</td><td rowspan="1">3</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNGPackage.TestCase</td><td><a href="#m0">loginMethod</a></td><td rowspan="1">1690194554816</td><td rowspan="1">741</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testNGAnnotation_Flags.Flag7#createUserMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+<h2>Default test</h2><h3 id="m0">testNGPackage.TestCase#loginMethod</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Started<br/>This method is failed taken the screenshot :loginMethod</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Tanmay] but found [actiTIME - Enter Time-Track]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at testNGAnnotation_Flags.Flag7.createUserMethod(Flag7.java:16)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testNGPackage.TestCase.loginMethod(TestCase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,7 +50,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testNGAnnotation_Flags.Flag7#loginMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testNGAnnotation_Flags.Flag7#logoutMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
