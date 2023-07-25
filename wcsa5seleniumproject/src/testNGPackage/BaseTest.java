@@ -26,22 +26,24 @@ public class BaseTest {
 		driver.get("http://laptop-knl22f4g/login.do");
 	}
 	
-	// implementation of takes Screenshot
-	public void failedMethod(String methodName)
+	//implementation of takes screenshot
+	
+	public void failedMethod(String failedMethodName)
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./screenshots/"+methodName+".png");
-		try
-		{
+	 	File dest = new File("./screenshots/"+failedMethodName+".png");
+	 	try
+	 	{
 		Files.copy(src, dest);
-		}
-		
-		catch (Exception e) {
-			
-		}
+	 	}
+	 	
+	 	catch(Exception e)
+	 	{
+	 		
+	 	}
 	}
-	
+	 
 	
 	
 	@AfterMethod
@@ -49,5 +51,4 @@ public class BaseTest {
 	{
 		driver.quit();
 	}
-	
 }

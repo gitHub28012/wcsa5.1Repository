@@ -5,8 +5,10 @@
     <classes>
       <class name="testNGPackage.TestCase">
         <methods>
+          <include name="createUser"/>
           <include name="tearDown"/>
           <include name="loginMethod"/>
+          <include name="logout"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testNGPackage.TestCase -->
