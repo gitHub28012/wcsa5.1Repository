@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : createUserMethod]]>
+    </line>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : validloginMethod]]>
+    </line>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : validloginMethod]]>
+    </line>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : project_customerMethod]]>
+    </line>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : createUserMethod]]>
+    </line>
+    <line>
+      <![CDATA[This method failed taken ScreenShot : project_customerMethod]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-08-01T15:02:07 IST" name="Suite" finished-at="2023-08-01T15:02:40 IST" duration-ms="32741">
+    <groups>
+    </groups>
+    <test started-at="2023-08-01T15:02:07 IST" name="Test" finished-at="2023-08-01T15:02:40 IST" duration-ms="32741">
+      <class name="testPackage.LoginTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.LoginTestCase@4d154ccd]" started-at="2023-08-01T15:02:07 IST" name="setUp" finished-at="2023-08-01T15:02:10 IST" duration-ms="2919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.LoginTestCase@4d154ccd]" started-at="2023-08-01T15:02:27 IST" name="setUp" finished-at="2023-08-01T15:02:28 IST" duration-ms="1270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inValidLoginMethod()[pri:0, instance:testPackage.LoginTestCase@4d154ccd]" started-at="2023-08-01T15:02:28 IST" name="inValidLoginMethod" finished-at="2023-08-01T15:02:39 IST" depends-on-methods="testPackage.LoginTestCase.validloginMethod" duration-ms="11266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLoginMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.LoginTestCase@4d154ccd]" started-at="2023-08-01T15:02:39 IST" name="tearDown" finished-at="2023-08-01T15:02:40 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.LoginTestCase -->
+      <class name="testPackage.UserTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.UserTestCase@69e153c5]" started-at="2023-08-01T15:02:07 IST" name="setUp" finished-at="2023-08-01T15:02:10 IST" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- testPackage.UserTestCase -->
+      <class name="testPackage.TaskTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.TaskTestCase@7674f035]" started-at="2023-08-01T15:02:07 IST" name="setUp" finished-at="2023-08-01T15:02:10 IST" duration-ms="2805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- testPackage.TaskTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
