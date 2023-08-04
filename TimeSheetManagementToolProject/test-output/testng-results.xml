@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-03T16:04:07 IST" name="Default suite" finished-at="2023-08-03T16:04:16 IST" duration-ms="9005">
+    <groups>
+    </groups>
+    <test started-at="2023-08-03T16:04:07 IST" name="Default test" finished-at="2023-08-03T16:04:16 IST" duration-ms="9005">
+      <class name="testPackage.UserTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.UserTestCase@248e319b]" started-at="2023-08-03T16:04:07 IST" name="setUp" finished-at="2023-08-03T16:04:10 IST" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createUserMethod()[pri:0, instance:testPackage.UserTestCase@248e319b]" started-at="2023-08-03T16:04:10 IST" name="createUserMethod" finished-at="2023-08-03T16:04:16 IST" duration-ms="6062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.UserTestCase@248e319b]" started-at="2023-08-03T16:04:16 IST" name="tearDown" finished-at="2023-08-03T16:04:16 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.UserTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

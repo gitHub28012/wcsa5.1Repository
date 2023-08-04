@@ -5,20 +5,17 @@
 	<groupId>com.wcsa5</groupId>
 	<artifactId>TimeSheetManagementToolProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-
+	
+	
+	
+	
 	<dependencies>
+
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.10.0</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.11.0</version>
 		</dependency>
 
 		<dependency>
@@ -29,13 +26,42 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.3.2</version>
+			<version>5.4.1</version>
 		</dependency>
 
-
 	</dependencies>
-
-
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+				
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M5</version>
+					
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testngAdminEnd_2_End.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
 </project>
